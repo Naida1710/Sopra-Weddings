@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta tags for seacrh engines -->
+    <!-- Meta tags for search engines -->
      <meta name="description" content=" Hedona Weddings, weddings, love weddings, wedding organisation, planning weddings, weddings in Sweden."
      <meta name="keywords" content=" hedona weddings, weddings, Sweden, marriage, wedding plannins, wedding ideas, bridal inspiration, wedding themes, weddings tips, wedding organisation."
 
@@ -19,30 +19,73 @@
      <link rel="stylesheet" href="assets/css/style.css">
    
 <body>
-    <!-- Header -->
+    <div id="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+
+        
+                <!-- Header -->
     <header>
-        <h1>HEDONA WEDDINGS</h1>
-        <h2>PLANNING, COORDINATION AND DESIGN</h2>
+        <div class="text-center">
+        <h1><strong>HEDONA WEDDINGS</strong></p></h1>
+        <h3 class="pink-text">PLANNING, COORDINATION AND DESIGN</h3>
         
         <p><em>Our weddings are personal, small and simple.
             <br> They're refined, engaging, intimate, and a guaranteed good time.
             <br> You'll see a lot of colored linen, wooden & metallic details, greenery, flowers, warm lighting and wine.</em></p>
             <hr>
-
+            
+        </div>
     </header>
 
     <!-- Main content -->
-    <main>Listen to the wind, it talks. <br>
+    <main>
+        <div class="text-center">Listen to the wind, it talks. <br>
         Listen to the silence, it speaks. <br>
         Listen to your heart, it knows.
+        </div>
 
-       <p>
-        <strong>BEHIND THE NAME</strong></p>
+       <div class="text-center"><p>
+        <h3><strong>BEHIND THE NAME</strong></p></h3>
         <p><br>HEDONA pronounced <strong>/hedone/</strong>, was the Goddes of Time, who could stop the time</p>
         
        <p><br> [a feeling of <strong>pleasure</strong> and enjoyment following release from stress]
        </p>
+    </div>
+
+    <form>
+        <div>
+        <label for="firstname">First name</label>
+        <input type="text" id="name"/>
+
+        <label for="lastname">Last name</label>
+        <input type="text" id="name"/></div>
     
+        <div><label for="email">Email</label>
+        <input id="email" type="email"></div>
+
+        <div><label for="date-time">Event Date and Time</label>
+
+<input
+  type="datetime-local"
+  id="meeting-time"
+  name="meeting-time"
+  min="2025-01-01T00:00"
+  max="2025-12-31T00:00" /></div>
+
+  <br><label for="text">Guest Count</label>
+        <input id="text" type="text">
+
+        <label for="message">Message</label>
+        <br>
+        <textarea id="message" cols="50" rows="10" name="message" placeholder="Your Message"></textarea>
+        
+       <br> <input type="submit" value="Submit" class="submit-btn">
+    </div>
+    </form>
     </main>
 
     <!-- Footer -->
